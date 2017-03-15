@@ -7,9 +7,7 @@ class ResultPrinter
     while counter <= 7 do
       file_name = current_path + "/data/#{counter}.txt"
       if File.exist?(file_name)
-        f = File.new(file_name, "r:UTF-8")
         @status_image << File.read(file_name)
-        f.close
       else
         @status_image << "\n[ Изображение не найдено ]\n"
       end
