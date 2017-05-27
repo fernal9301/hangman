@@ -1,8 +1,8 @@
 # encoding: utf-8
 current_path = File.dirname(__FILE__)
-require_relative 'game'
-require_relative 'word_reader'
-require_relative 'result_printer'
+require_relative 'lib/game'
+require_relative 'lib/word_reader'
+require_relative 'lib/result_printer'
 
 printer = ResultPrinter.new
 reader = WordReader.new

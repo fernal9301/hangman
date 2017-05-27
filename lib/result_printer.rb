@@ -5,7 +5,7 @@ class ResultPrinter
     current_path = File.dirname(__FILE__)
     counter = 0
     while counter <= 7 do
-      file_name = current_path + "/data/#{counter}.txt"
+      file_name = current_path + "/../data/#{counter}.txt"
       if File.exist?(file_name)
         @status_image << File.read(file_name)
       else
